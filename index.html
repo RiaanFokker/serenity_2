@@ -1,0 +1,2256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Serenity</title>
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="robots" content="noindex">
+
+    <meta property="og:title" content="Serenity">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://express.adobe.com/page/U5mjiYNFg06bX/embed.jpg?buster=1670396268866">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="512">
+    <meta property="og:site_name" content="Adobe Express">
+    <meta property="og:description" content="A story told with Adobe Express">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Serenity">
+    <meta name="twitter:image:src"
+        content="https://express.adobe.com/page/U5mjiYNFg06bX/embed.jpg?buster=1670396268866">
+    <meta name="twitter:description" content="A story told with Adobe Express">
+
+    <link rel="apple-touch-icon" href="https://express.adobe.com/page/U5mjiYNFg06bX/embed.jpg?buster=1670396268866">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+
+    <meta property="fb:app_id" content="919039361464473">
+    <meta name="twitter:site" content="@AdobeSpark">
+
+    <script src="https://page.adobespark-assets.com/runtime/1.23/base-fonts.gz.js"></script>
+    <script src="https://page.adobespark-assets.com/runtime/1.23/themes/crisp-fonts.gz.js"></script>
+    <script src="https://page.adobespark-assets.com/runtime/1.23/typekit-load.gz.js"></script>
+    <link href="https://page.adobespark-assets.com/runtime/1.23/runtime.gz.css" type="text/css" rel="stylesheet">
+    <style>
+        /* custom-theme base */
+
+        .crisp-theme .single-column-section .section-background,
+        .crisp-theme .title-section {
+            background-color: #484848;
+        }
+
+        .crisp-theme .title-header {
+            height: 100%;
+            text-align: center;
+            box-sizing: border-box;
+            font-size: 0;
+        }
+
+        .crisp-theme .title-top-left .title-header,
+        .crisp-theme .title-left .title-header,
+        .crisp-theme .title-bottom-left .title-header {
+            text-align: left;
+        }
+
+        .crisp-theme .title-top .title-header,
+        .crisp-theme .title-center .title-header,
+        .crisp-theme .title-bottom .title-header {
+            text-align: center;
+        }
+
+        .crisp-theme .title-top-right .title-header,
+        .crisp-theme .title-right .title-header,
+        .crisp-theme .title-bottom-right .title-header {
+            text-align: right;
+        }
+
+        .crisp-theme .title-header:before {
+            content: '';
+            display: inline-block;
+            width: 0;
+            height: 100%;
+            vertical-align: bottom;
+        }
+
+        .crisp-theme .title-top-left .title-header:before,
+        .crisp-theme .title-top .title-header:before,
+        .crisp-theme .title-top-right .title-header:before {
+            vertical-align: top;
+        }
+
+        .crisp-theme .title-left .title-header:before,
+        .crisp-theme .title-center .title-header:before,
+        .crisp-theme .title-right .title-header:before {
+            vertical-align: middle;
+        }
+
+        .crisp-theme .title-header-view {
+            position: relative;
+            display: inline-block;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        .crisp-theme .title-header .gradient-overlay {
+            background-color: rgba(0, 0, 0, 0);
+            background-image: -webkit-linear-gradient(-270deg
+                    /*[gradient-angle-aligned-center]*/
+                    , rgba(0, 0, 0, 0)
+                    /*[gradient-stop-0-color-aligned-center]*/
+                    0%
+                    /*[gradient-stop-0-percent-aligned-center]*/
+                    , rgba(0, 0, 0, 0.25)
+                    /*[gradient-stop-1-color-aligned-center]*/
+                    25%
+                    /*[gradient-stop-1-percent-aligned-center]*/
+                    , rgba(0, 0, 0, 0.50)
+                    /*[gradient-stop-2-color-aligned-center]*/
+                    50%
+                    /*[gradient-stop-2-percent-aligned-center]*/
+                    , rgba(0, 0, 0, 0.25)
+                    /*[gradient-stop-3-color-aligned-center]*/
+                    75%
+                    /*[gradient-stop-3-percent-aligned-center]*/
+                    , rgba(0, 0, 0, 0)
+                    /*[gradient-stop-4-color-aligned-center]*/
+                    100%
+                    /*[gradient-stop-4-percent-aligned-center]*/
+                );
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0.50) 50%, rgba(0, 0, 0, 0.25) 75%, rgba(0, 0, 0, 0) 100%);
+        }
+
+        .crisp-theme .title-top-left .title-header .gradient-overlay,
+        .crisp-theme .title-top .title-header .gradient-overlay,
+        .crisp-theme .title-top-right .title-header .gradient-overlay {
+            background-image: -webkit-linear-gradient(-270deg
+                    /*[gradient-angle-aligned-top]*/
+                    , rgba(0, 0, 0, 0)
+                    /*[gradient-stop-0-color-aligned-top]*/
+                    0%
+                    /*[gradient-stop-0-percent-aligned-top]*/
+                    , rgba(0, 0, 0, 0.5)
+                    /*[gradient-stop-1-color-aligned-top]*/
+                    100%
+                    /*[gradient-stop-1-percent-aligned-top]*/
+                );
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+        }
+
+        .crisp-theme .title-bottom-left .title-header .gradient-overlay,
+        .crisp-theme .title-bottom .title-header .gradient-overlay,
+        .crisp-theme .title-bottom-right .title-header .gradient-overlay {
+            background-image: -webkit-linear-gradient(-270deg
+                    /*[gradient-angle-aligned-bottom]*/
+                    , rgba(0, 0, 0, 0.5)
+                    /*[gradient-stop-0-color-aligned-bottom]*/
+                    0%
+                    /*[gradient-stop-0-percent-aligned-bottom]*/
+                    , rgba(0, 0, 0, 0)
+                    /*[gradient-stop-1-color-aligned-bottom]*/
+                    100%
+                    /*[gradient-stop-1-percent-aligned-bottom]*/
+                );
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+        }
+
+        .crisp-theme .card-flipbook-section .section-content .content-container {
+            box-shadow: 0 0 4px rgba(0, 0, 0, .25);
+        }
+
+        .crisp-theme .card-flipbook-section .section-content .card-right .content-container {
+            margin-left: auto;
+        }
+
+        .crisp-theme .card-flipbook-section .section-content .card-center .content-container {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* crisp-theme components */
+
+        .crisp-theme.article,
+        .crisp-theme .section {
+            background-color: rgba(255, 255, 255, 1);
+        }
+
+        .crisp-theme .section-content .content-container {
+            padding-left: 20%;
+            padding-right: 20%;
+        }
+
+        /*
+ * Browsers vary in their default behavior of <b>/<strong> tags. Some default to
+ * font-weight: bold (Chrome) and others default to font-weight: bolder (Firefox).
+ * We explicitly match Chrome's behavior here so that font face fallback logic
+ * is consistent between browsers (MRVL-15001)
+ */
+        .crisp-theme strong,
+        .crisp-theme b {
+            font-weight: bold;
+        }
+
+        /* title-section gradient-overlay treatment */
+
+        .crisp-theme .title-section {
+            background-color: #484848;
+        }
+
+        .crisp-theme .title-header {
+            padding: 64px 5% 64px 5%;
+            background-color: transparent;
+        }
+
+        .crisp-theme .title-header-view {
+            padding: 0px 0px 0px 0px;
+            width: 100%;
+            max-width: 89%;
+            background-color: transparent;
+            border-radius: 0px 0px 0px 0px;
+        }
+
+        .crisp-theme .title-header .gradient-overlay {
+            right: -25%;
+            left: -25%;
+        }
+
+        .crisp-theme .title-top-left .title-header .gradient-overlay,
+        .crisp-theme .title-top .title-header .gradient-overlay,
+        .crisp-theme .title-top-right .title-header .gradient-overlay {
+            top: -64px;
+            bottom: -50%;
+            height: auto;
+        }
+
+        .crisp-theme .title-bottom-left .title-header .gradient-overlay,
+        .crisp-theme .title-bottom .title-header .gradient-overlay,
+        .crisp-theme .title-bottom-right .title-header .gradient-overlay {
+            top: -50%;
+            bottom: -64px;
+            height: auto;
+        }
+
+        .crisp-theme .title-header .title {
+            margin: 0 0;
+            padding: 0 0;
+            max-height: 3.1395em;
+            color: rgba(255, 255, 255, 1);
+            font-family: proxima-nova, sans-serif;
+            font-size: 94px;
+            font-style: normal;
+            font-weight: 100;
+            text-transform: none;
+            line-height: 1.0465;
+            letter-spacing: normal;
+            text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+        }
+
+        .crisp-theme .title-header .subtitle {
+            margin-top: 1rem;
+            padding: 0;
+            max-height: 4.8149999999999995em;
+            color: rgba(255, 255, 255, 1);
+            font-family: proxima-nova, sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            text-transform: uppercase;
+            line-height: 1.605;
+            letter-spacing: normal;
+            text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+        }
+
+        @media (max-width: 767px) {
+            .crisp-theme .title-header {
+                padding: 32px 5% 32px 5%;
+            }
+        }
+
+        /* Wide Screen Widths */
+
+        @media (min-width: 1300px) {
+
+            /* each pair of title padding values should sum to 30% */
+            .crisp-theme .title-top-left .title-header-view,
+            .crisp-theme .title-left .title-header-view,
+            .crisp-theme .title-bottom-left .title-header-view {
+                padding-left: 10%;
+                padding-right: 20%;
+            }
+
+            .crisp-theme .title-top .title-header-view,
+            .crisp-theme .title-center .title-header-view,
+            .crisp-theme .title-bottom .title-header-view {
+                padding-left: 15%;
+                padding-right: 15%;
+            }
+
+            .crisp-theme .title-top-right .title-header-view,
+            .crisp-theme .title-right .title-header-view,
+            .crisp-theme .title-bottom-right .title-header-view {
+                padding-left: 20%;
+                padding-right: 10%;
+            }
+        }
+
+        /* Extra Wide Screen Widths */
+
+        @media (min-width: 1800px) {
+
+            /* each pair of title padding values should sum to 50% */
+            .crisp-theme .title-top-left .title-header-view,
+            .crisp-theme .title-left .title-header-view,
+            .crisp-theme .title-bottom-left .title-header-view {
+                padding-left: 15%;
+                padding-right: 35%;
+            }
+
+            .crisp-theme .title-top .title-header-view,
+            .crisp-theme .title-center .title-header-view,
+            .crisp-theme .title-bottom .title-header-view {
+                padding-left: 25%;
+                padding-right: 25%;
+            }
+
+            .crisp-theme .title-top-right .title-header-view,
+            .crisp-theme .title-right .title-header-view,
+            .crisp-theme .title-bottom-right .title-header-view {
+                padding-left: 35%;
+                padding-right: 15%;
+            }
+        }
+
+        /* Super Wide Screen Widths */
+
+        @media (min-width: 2300px) {
+
+            /* each pair of title padding values should sum to 60% */
+            .crisp-theme .title-top-left .title-header-view,
+            .crisp-theme .title-left .title-header-view,
+            .crisp-theme .title-bottom-left .title-header-view {
+                padding-left: 20%;
+                padding-right: 40%;
+            }
+
+            .crisp-theme .title-top .title-header-view,
+            .crisp-theme .title-center .title-header-view,
+            .crisp-theme .title-bottom .title-header-view {
+                padding-left: 30%;
+                padding-right: 30%;
+            }
+
+            .crisp-theme .title-top-right .title-header-view,
+            .crisp-theme .title-right .title-header-view,
+            .crisp-theme .title-bottom-right .title-header-view {
+                padding-left: 40%;
+                padding-right: 20%;
+            }
+        }
+
+
+        @media (max-width: 767px) {
+            .crisp-theme .title-header .title {
+                font-size: 50px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .crisp-theme .title-header .subtitle {
+                font-size: 20px;
+            }
+        }
+
+        /* heading no treatment */
+
+        .crisp-theme .content-container h3 {
+            z-index: 0;
+            font-family: proxima-nova, sans-serif;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 300;
+            text-transform: none;
+            line-height: 1.1500000000000001;
+            letter-spacing: normal;
+            color: rgba(0, 0, 0, 1);
+            text-align: left;
+        }
+
+
+
+
+        @media (max-width: 767px) {
+            .crisp-theme .content-container h3 {
+                font-size: 36px;
+            }
+        }
+
+        .crisp-theme .content-container h4 {
+            font-family: proxima-nova, sans-serif;
+            font-size: 29px;
+            font-style: normal;
+            font-weight: 400;
+            text-transform: none;
+            line-height: 1.4;
+            letter-spacing: normal;
+            color: rgba(0, 0, 0, 1);
+            text-align: left;
+        }
+
+        @media (max-width: 767px) {
+            .crisp-theme .content-container h4 {
+                font-size: 21px;
+            }
+        }
+
+        .crisp-theme .single-column-section .content-container p,
+        .crisp-theme .card-flipbook-section .content-container p {
+            font-family: proxima-nova, sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 300;
+            text-transform: none;
+            line-height: 1.6;
+            letter-spacing: normal;
+            color: rgba(17, 26, 11, 1);
+        }
+
+        @media (max-width: 767px) {
+
+            .crisp-theme .single-column-section .content-container p,
+            .crisp-theme .card-flipbook-section .content-container p {
+                font-size: 18px;
+            }
+        }
+
+        .crisp-theme .content-container ul li {
+            font-family: proxima-nova, sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 300;
+            text-transform: none;
+            line-height: 1.6;
+            letter-spacing: normal;
+            color: rgba(17, 26, 11, 1);
+            margin-left: 36px;
+            margin-right: 0px;
+        }
+
+        @media (max-width: 767px) {
+            .crisp-theme .content-container ul li {
+                font-size: 18px;
+            }
+        }
+
+        .crisp-theme .content-container ol li {
+            font-family: proxima-nova, sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 300;
+            text-transform: none;
+            line-height: 1.6;
+            letter-spacing: normal;
+            color: rgba(17, 26, 11, 1);
+            margin-left: 36px;
+            margin-right: 0px;
+        }
+
+        @media (max-width: 767px) {
+            .crisp-theme .content-container ol li {
+                font-size: 18px;
+            }
+        }
+
+
+
+
+        /* blockquote left rule treatment */
+
+        .crisp-theme .content-container blockquote {
+            z-index: 0;
+            position: relative;
+            font-family: proxima-nova-condensed, sans-serif;
+            font-size: 36px;
+            font-style: italic;
+            font-weight: 300;
+            text-transform: none;
+            line-height: 1.2449999999999999;
+            letter-spacing: normal;
+            color: rgba(0, 0, 0, 1);
+            text-align: left;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-top: .25em;
+            padding-bottom: .25em;
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+
+        .crisp-theme .content-container blockquote:before {
+            content: "";
+            display: inline-block;
+            z-index: -1;
+            position: absolute;
+            top: 0px;
+            right: auto;
+            bottom: 0px;
+            left: 0px;
+            width: 5px;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+
+        @media (max-width: 767px) {
+            .crisp-theme .content-container blockquote {
+                font-size: 27px;
+            }
+        }
+
+        .crisp-theme .image-wrapper {
+            overflow: hidden;
+        }
+
+        /* inline image no treatment */
+
+        .crisp-theme .card-flipbook-section .caption,
+        .crisp-theme .single-column-section .caption {
+            font-family: proxima-nova, sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            text-transform: none;
+            line-height: 1.6;
+            letter-spacing: normal;
+            color: rgba(17, 26, 11, 1);
+            text-align: center;
+            margin: .5em 0px;
+        }
+
+
+
+        @media (max-width: 767px) {
+
+            .crisp-theme .card-flipbook-section .caption,
+            .crisp-theme .single-column-section .caption {
+                font-size: 16px;
+            }
+        }
+
+
+        /* button rounded treatment */
+
+        .crisp-theme .content-container a.link-button {
+            display: inline-block;
+            border-radius: 0.2em;
+            border: solid 1px rgba(0, 0, 0, 1);
+            padding-top: 7px;
+            padding-left: 17px;
+            padding-right: 17px;
+            padding-bottom: 7px;
+            font-family: proxima-nova, sans-serif;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 400;
+            text-transform: none;
+            line-height: 1.35;
+            letter-spacing: normal;
+            text-decoration: none;
+            text-align: center;
+            color: rgba(0, 0, 0, 1);
+
+            -webkit-transition: color .15s linear, background-color .15s ease-in-out, border-color .15s ease-in-out;
+            -moz-transition: color .15s linear, background-color .15s ease-in-out, border-color .15s ease-in-out;
+            -o-transition: color .15s linear, background-color .15s ease-in-out, border-color .15s ease-in-out;
+            -ms-transition: color .15s linear, background-color .15s ease-in-out, border-color .15s ease-in-out;
+            transition: color .15s linear, background-color .15s ease-in-out, border-color .15s ease-in-out;
+        }
+
+        .crisp-theme .content-container a.link-button:hover {
+            border-color: rgba(38, 38, 38, 1);
+            color: rgba(38, 38, 38, 1);
+        }
+
+        @media (max-width: 767px) {
+            .crisp-theme .content-container a.link-button {
+                padding-top: 5px;
+                padding-left: 17px;
+                padding-right: 17px;
+                padding-bottom: 5px;
+            }
+        }
+
+
+
+
+        @media (max-width: 767px) {
+            .crisp-theme .content-container a.link-button {
+                font-size: 18px;
+            }
+        }
+
+        .crisp-theme .single-column-section .content-container a:not(.link-button),
+        .crisp-theme .card-flipbook-section .content-container a:not(.link-button),
+        .crisp-theme .photo-grid-section .content-container a:not(.link-button),
+        .crisp-theme .full-width-section .content-container a:not(.link-button) {
+            background-color: transparent;
+            color: rgba(82, 159, 198, 1);
+            text-decoration:
+                underline;
+            -webkit-transition: color .15s linear;
+            -moz-transition: color .15s linear;
+            -o-transition: color .15s linear;
+            -ms-transition: color .15s linear;
+            transition: color .15s linear;
+        }
+
+        .crisp-theme .single-column-section .content-container a:not(.link-button):hover,
+        .crisp-theme .card-flipbook-section .content-container a:not(.link-button):hover,
+        .crisp-theme .photo-grid-section .content-container a:not(.link-button):hover,
+        .crisp-theme .full-width-section .content-container a:not(.link-button):hover {
+            color: rgba(31, 91, 122, 1);
+        }
+
+
+        /* full width image no treatment */
+
+        .crisp-theme .full-width-section .caption {
+            font-family: proxima-nova, sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            text-transform: none;
+            line-height: 1.6;
+            letter-spacing: normal;
+            color: rgba(17, 26, 11, 1);
+            text-align: center;
+            margin: .5em 0px;
+        }
+
+        .crisp-theme .full-width-section .caption {
+            padding-right: 5%;
+            padding-left: 5%;
+        }
+
+
+
+        @media (max-width: 767px) {
+            .crisp-theme .full-width-section .caption {
+                font-size: 16px;
+            }
+        }
+
+        /* fillscreen section */
+
+
+        .crisp-theme .fullscreen-photo-section .pull-quote {
+            position: absolute;
+            top: 0px;
+            right: auto;
+            bottom: auto;
+            left: 0px;
+            margin: 96px 32px;
+            padding: 24px;
+            max-width: 50%;
+            font-family: proxima-nova, sans-serif;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 300;
+            text-transform: none;
+            line-height: 1.5;
+            letter-spacing: normal;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, .35);
+            color: rgba(0, 0, 0, 1);
+            background-color: rgba(255, 255, 255, 0.8);
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .crisp-theme .fullscreen-photo-section .pull-quote .content-container {
+            color: rgba(0, 0, 0, 1);
+        }
+
+        @media (max-width: 767px) {
+            .crisp-theme .fullscreen-photo-section .pull-quote {
+                font-size: 19px;
+                margin: 48px 16px;
+                padding: 12px;
+            }
+        }
+
+
+        /* window section */
+
+        .crisp-theme .window-section .pull-quote {
+            position: absolute;
+            top: 0px;
+            right: auto;
+            bottom: auto;
+            left: 0px;
+            margin: 48px 32px;
+            padding: 24px;
+            max-width: 50%;
+            font-family: proxima-nova, sans-serif;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 300;
+            text-transform: none;
+            line-height: 1.5;
+            letter-spacing: normal;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, .35);
+            color: rgba(17, 26, 11, 1);
+            background-color: rgba(255, 255, 255, 0.8);
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .crisp-theme .window-section .pull-quote .content-container {
+            color: rgba(17, 26, 11, 1);
+        }
+
+        @media (max-width: 767px) {
+            .crisp-theme .window-section .pull-quote {
+                font-size: 19px;
+                margin: 24px 16px;
+                padding: 12px;
+            }
+        }
+
+
+
+        /* photo grid no treatment */
+
+        .crisp-theme .grid-caption {
+            margin: .5em 0px;
+            font-family: proxima-nova, sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            text-transform: none;
+            line-height: 1.6;
+            letter-spacing: normal;
+            text-align: center;
+            color: rgba(17, 26, 11, 1)
+        }
+
+
+
+        @media (max-width: 767px) {
+            .crisp-theme .grid-caption {
+                font-size: 16px;
+            }
+        }
+
+        .crisp-theme .card-flipbook-section .section-content .content-container {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .crisp-theme .content-spacer {
+            height: 0.125rem;
+        }
+
+        .crisp-theme .content-item-spacer {
+            height: 5.000rem;
+        }
+
+        .crisp-theme .section .section-content .content-container {
+            padding-top: 2.500rem;
+            padding-bottom: 2.500rem;
+        }
+
+        .crisp-theme .full-width-section .section-content .content-container {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .crisp-theme .section.large-content-spacing-top .section-content .content-container {
+            padding-top: 5.000rem;
+        }
+
+        .crisp-theme .section.large-content-spacing-bottom .section-content .content-container {
+            padding-bottom: 5.000rem;
+        }
+
+        .crisp-theme .content-container> :first-child {
+            margin-top: 0;
+        }
+
+        .crisp-theme .content-container> :last-child {
+            margin-bottom: 0;
+        }
+
+        .crisp-theme ul,
+        .crisp-theme ol {
+            padding: 0
+        }
+
+        .crisp-theme li {
+            margin-bottom: 0.500rem;
+        }
+
+        .crisp-theme li:last-child {
+            margin-bottom: 0;
+        }
+
+        .crisp-theme .content-container p {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .crisp-theme .content-container p+p {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container ol+p {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container ul+p {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container h3+p {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container h4+p {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container blockquote+p {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container .link-button-wrapper+p {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container div.image+p {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container ol {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .crisp-theme .content-container p+ol {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container ol+ol {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container ul+ol {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container h3+ol {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container h4+ol {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container blockquote+ol {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container .link-button-wrapper+ol {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container div.image+ol {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container ul {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .crisp-theme .content-container p+ul {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container ol+ul {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container ul+ul {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container h3+ul {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container h4+ul {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container blockquote+ul {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container .link-button-wrapper+ul {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container div.image+ul {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container h3 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .crisp-theme .content-container p+h3 {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container ol+h3 {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container ul+h3 {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container h3+h3 {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container h4+h3 {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container blockquote+h3 {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container .link-button-wrapper+h3 {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container div.image+h3 {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container h4 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .crisp-theme .content-container p+h4 {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container ol+h4 {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container ul+h4 {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container h3+h4 {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container h4+h4 {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container blockquote+h4 {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container .link-button-wrapper+h4 {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container div.image+h4 {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container blockquote {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .crisp-theme .content-container p+blockquote {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container ol+blockquote {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container ul+blockquote {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container h3+blockquote {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container h4+blockquote {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container blockquote+blockquote {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container .link-button-wrapper+blockquote {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container div.image+blockquote {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container .link-button-wrapper {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .crisp-theme .content-container p+.link-button-wrapper {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container ol+.link-button-wrapper {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container ul+.link-button-wrapper {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container h3+.link-button-wrapper {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container h4+.link-button-wrapper {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container blockquote+.link-button-wrapper {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container .link-button-wrapper+.link-button-wrapper {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container div.image+.link-button-wrapper {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container div.image {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .crisp-theme .content-container p+div.image {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container ol+div.image {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container ul+div.image {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container h3+div.image {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container h4+div.image {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container blockquote+div.image {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container .link-button-wrapper+div.image {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .content-container div.image+div.image {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .photo-grid-section+.single-column-section h3:first-child,
+        .crisp-theme .photo-grid-section+.single-column-section h4:first-child,
+        .crisp-theme .photo-grid-section+.single-column-section blockquote:first-child {
+            margin-top: 2.500rem;
+        }
+
+        .crisp-theme .photo-grid-section+.single-column-section blockquote:last-child {
+            margin-top: 2.500rem;
+        }
+
+        @media (max-width: 767px) {
+            .crisp-theme .content-spacer {
+                height: 0.125rem;
+            }
+
+            .crisp-theme .content-item-spacer {
+                height: 2.500rem;
+            }
+
+            .crisp-theme .section .section-content .content-container {
+                padding-top: 1.250rem;
+                padding-bottom: 1.250rem;
+            }
+
+            .crisp-theme .full-width-section .section-content .content-container {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+
+            .crisp-theme .section.large-content-spacing-top .section-content .content-container {
+                padding-top: 2.500rem;
+            }
+
+            .crisp-theme .section.large-content-spacing-bottom .section-content .content-container {
+                padding-bottom: 2.500rem;
+            }
+
+            .crisp-theme .content-container> :first-child {
+                margin-top: 0;
+            }
+
+            .crisp-theme .content-container> :last-child {
+                margin-bottom: 0;
+            }
+
+            .crisp-theme ul,
+            .crisp-theme ol {
+                padding: 0
+            }
+
+            .crisp-theme li {
+                margin-bottom: 0.250rem;
+            }
+
+            .crisp-theme li:last-child {
+                margin-bottom: 0;
+            }
+
+            .crisp-theme .content-container p {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .crisp-theme .content-container p+p {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container ol+p {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container ul+p {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container h3+p {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container h4+p {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container blockquote+p {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container .link-button-wrapper+p {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container div.image+p {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container ol {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .crisp-theme .content-container p+ol {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container ol+ol {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container ul+ol {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container h3+ol {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container h4+ol {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container blockquote+ol {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container .link-button-wrapper+ol {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container div.image+ol {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container ul {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .crisp-theme .content-container p+ul {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container ol+ul {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container ul+ul {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container h3+ul {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container h4+ul {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container blockquote+ul {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container .link-button-wrapper+ul {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container div.image+ul {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container h3 {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .crisp-theme .content-container p+h3 {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container ol+h3 {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container ul+h3 {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container h3+h3 {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container h4+h3 {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container blockquote+h3 {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container .link-button-wrapper+h3 {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container div.image+h3 {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container h4 {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .crisp-theme .content-container p+h4 {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container ol+h4 {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container ul+h4 {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container h3+h4 {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container h4+h4 {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container blockquote+h4 {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container .link-button-wrapper+h4 {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container div.image+h4 {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container blockquote {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .crisp-theme .content-container p+blockquote {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container ol+blockquote {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container ul+blockquote {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container h3+blockquote {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container h4+blockquote {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container blockquote+blockquote {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container .link-button-wrapper+blockquote {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container div.image+blockquote {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container .link-button-wrapper {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .crisp-theme .content-container p+.link-button-wrapper {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container ol+.link-button-wrapper {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container ul+.link-button-wrapper {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container h3+.link-button-wrapper {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container h4+.link-button-wrapper {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container blockquote+.link-button-wrapper {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container .link-button-wrapper+.link-button-wrapper {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container div.image+.link-button-wrapper {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container div.image {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .crisp-theme .content-container p+div.image {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container ol+div.image {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container ul+div.image {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container h3+div.image {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container h4+div.image {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container blockquote+div.image {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container .link-button-wrapper+div.image {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .content-container div.image+div.image {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .photo-grid-section+.single-column-section h3:first-child,
+            .crisp-theme .photo-grid-section+.single-column-section h4:first-child,
+            .crisp-theme .photo-grid-section+.single-column-section blockquote:first-child {
+                margin-top: 1.250rem;
+            }
+
+            .crisp-theme .photo-grid-section+.single-column-section blockquote:last-child {
+                margin-top: 1.250rem;
+            }
+        }
+
+
+
+        /* Default Screen Widths */
+
+        .crisp-theme .section-content .content-container {
+            padding-left: 20%;
+            padding-right: 20%;
+        }
+
+        .crisp-theme .card-flipbook-section .section-content .content-container {
+            width: 50%;
+            margin: 32px 32px;
+            padding: 56px 32px;
+        }
+
+        .crisp-theme .card-flipbook-section .section-content .card-center .content-container {
+            width: 65%;
+            max-width: 900px;
+        }
+
+        /* Narrow Screen Widths */
+
+        @media (max-width: 768px) {
+            .crisp-theme .section-content .content-container {
+                padding-left: 12.5%;
+                padding-right: 12.5%;
+            }
+
+            .crisp-theme .card-flipbook-section .section-content .content-container {
+                width: 60%;
+                margin: 32px 32px;
+                padding: 56px 32px;
+            }
+
+            .crisp-theme .card-flipbook-section .section-content .card-center .content-container {
+                width: 75%;
+                max-width: 900px;
+            }
+        }
+
+        /* Extra Narrow Screen Widths */
+
+        @media (max-width: 480px) {
+            .crisp-theme .section-content .content-container {
+                padding-left: 7%;
+                padding-right: 7%;
+            }
+
+            .crisp-theme .card-flipbook-section .section-content .content-container {
+                width: 70%;
+                margin: 18px 14px;
+                padding: 31px 13px;
+            }
+
+            .crisp-theme .card-flipbook-section .section-content .card-center .content-container {
+                width: 75%;
+                max-width: 900px;
+            }
+        }
+
+        /* Super Narrow Screen Widths */
+
+        @media (max-width: 320px) {
+            .crisp-theme .section-content .content-container {
+                padding-left: 7%;
+                padding-right: 7%;
+            }
+
+            .crisp-theme .card-flipbook-section .section-content .content-container {
+                width: 70%;
+                margin: 18px 14px;
+                padding: 31px 12px;
+            }
+
+            .crisp-theme .card-flipbook-section .section-content .card-center .content-container {
+                width: 75%;
+                max-width: 900px;
+            }
+        }
+
+        /* Wide Screen Widths */
+
+        @media (min-width: 1300px) {
+            .crisp-theme .section-content .content-container {
+                padding-left: 25%;
+                padding-right: 25%;
+            }
+
+            .crisp-theme .card-flipbook-section .section-content .content-container {
+                width: 40%;
+                margin: 32px 32px;
+                padding: 56px 32px;
+                max-width: 580px;
+            }
+
+            .crisp-theme .card-flipbook-section .section-content .card-center .content-container {
+                width: 65%;
+                max-width: 900px;
+            }
+        }
+
+        /* Extra Wide Screen Widths */
+
+        @media (min-width: 1800px) {
+            .crisp-theme .section-content .content-container {
+                padding-left: 30%;
+                padding-right: 30%;
+            }
+
+            .crisp-theme .card-flipbook-section .section-content .content-container {
+                width: 30%;
+                margin: 32px 80px;
+                padding: 56px 32px;
+                max-width: 580px;
+            }
+
+            .crisp-theme .card-flipbook-section .section-content .card-center .content-container {
+                width: 65%;
+                max-width: 900px;
+            }
+        }
+
+        /* Super Wide Screen Widths */
+
+        @media (min-width: 2300px) {
+            .crisp-theme .section-content .content-container {
+                padding-left: 33%;
+                padding-right: 33%;
+            }
+
+            .crisp-theme .card-flipbook-section .section-content .content-container {
+                width: 25%;
+                margin: 32px 80px;
+                padding: 56px 32px;
+                max-width: 580px;
+            }
+
+            .crisp-theme .card-flipbook-section .section-content .card-center .content-container {
+                width: 65%;
+                max-width: 900px;
+            }
+        }
+
+        .crisp-theme .section.author-section .author-appreciation-container {
+            border-color: rgba(17, 26, 11, 0.5);
+        }
+
+        .crisp-theme .section.author-section .author {
+            font-family: proxima-nova;
+            color: rgba(17, 26, 11, 1);
+        }
+
+        .crisp-theme .section.author-section .appreciate-button {
+            color: rgba(17, 26, 11, 0.5);
+            border-color: rgba(17, 26, 11, 0.5);
+        }
+
+        .crisp-theme .section.author-section .appreciate-button:before {
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBzdHlsZT0iZmlsbDpyZ2JhKDE3LDI2LDExLDAuNSk7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDMpIiBkPSJNMTYsMjZMMi44LDE0LjRDMS4xLDEyLjksMCwxMC43LDAsOC40YzAtMi4zLDEtNC41LDIuOC02QzQuNiwwLjksNi45LDAsOS4yLDBjMi40LDAsNC42LDAuOCw2LjQsMi40YzAuMSwwLjEsMC4zLDAuMywwLjQsMC40YzAuMS0wLjEsMC4zLTAuMywwLjQtMC40QzE4LjIsMC45LDIwLjUsMCwyMi44LDBjMi4zLDAsNC42LDAuOCw2LjQsMi40QzMxLDMuOSwzMiw2LjEsMzIsOC40YzAsMi4zLTEsNC41LTIuOCw2TDE2LDI2eiBNOS4yLDQuN0M4LDQuNyw2LjksNS4yLDYsNS45QzUuMyw2LjUsNC44LDcuNCw0LjgsOC40YzAsMSwwLjUsMS45LDEuMiwyLjVsMTAsOC44bDEwLTguOGMwLjctMC42LDEuMi0xLjUsMS4yLTIuNWMwLTEtMC41LTEuOS0xLjItMi41Yy0xLjktMS41LTQuNS0xLjUtNi40LDBjLTAuNywwLjYtMS4yLDEuNS0xLjIsMi41aC00LjhjMC0xLTAuNS0xLjktMS4yLTIuNUMxMS41LDUuMSwxMC40LDQuNyw5LjIsNC43eiIvPjwvc3ZnPg==');
+        }
+
+        .crisp-theme .section.author-section .appreciate-button:after {
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBzdHlsZT0iZmlsbDpyZ2JhKDE3LDI2LDExLDEpOyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAzKSIgZD0iTTIuOCwxNC40QzEuMSwxMi45LDAsMTAuNywwLDguNGMwLTIuMywxLTQuNSwyLjgtNkM0LjYsMC45LDYuOSwwLDkuMiwwYzIuNCwwLDQuNiwwLjgsNi40LDIuNGMwLjEsMC4xLDAuMywwLjMsMC40LDAuNGMwLjEtMC4xLDAuMy0wLjMsMC40LTAuNEMxOC4yLDAuOSwyMC41LDAsMjIuOCwwYzIuMywwLDQuNiwwLjgsNi40LDIuNEMzMSwzLjksMzIsNi4xLDMyLDguNGMwLDIuMy0xLDQuNS0yLjgsNkwxNiwyNiIvPjwvc3ZnPg==');
+        }
+
+        .crisp-theme .section.author-section .appreciate-button.appreciated:before {
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBzdHlsZT0iZmlsbDpyZ2JhKDE3LDI2LDExLDAuNSk7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDMpIiBkPSJNMi44LDE0LjRDMS4xLDEyLjksMCwxMC43LDAsOC40YzAtMi4zLDEtNC41LDIuOC02QzQuNiwwLjksNi45LDAsOS4yLDBjMi40LDAsNC42LDAuOCw2LjQsMi40YzAuMSwwLjEsMC4zLDAuMywwLjQsMC40YzAuMS0wLjEsMC4zLTAuMywwLjQtMC40QzE4LjIsMC45LDIwLjUsMCwyMi44LDBjMi4zLDAsNC42LDAuOCw2LjQsMi40QzMxLDMuOSwzMiw2LjEsMzIsOC40YzAsMi4zLTEsNC41LTIuOCw2TDE2LDI2Ii8+PC9zdmc+');
+        }
+
+        .crisp-theme .section.author-section .appreciate-button.appreciated:after {
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBzdHlsZT0iZmlsbDpyZ2JhKDE3LDI2LDExLDEpOyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAzKSIgZD0iTTE2LDI2TDIuOCwxNC40QzEuMSwxMi45LDAsMTAuNywwLDguNGMwLTIuMywxLTQuNSwyLjgtNkM0LjYsMC45LDYuOSwwLDkuMiwwYzIuNCwwLDQuNiwwLjgsNi40LDIuNGMwLjEsMC4xLDAuMywwLjMsMC40LDAuNGMwLjEtMC4xLDAuMy0wLjMsMC40LTAuNEMxOC4yLDAuOSwyMC41LDAsMjIuOCwwYzIuMywwLDQuNiwwLjgsNi40LDIuNEMzMSwzLjksMzIsNi4xLDMyLDguNGMwLDIuMy0xLDQuNS0yLjgsNkwxNiwyNnogTTkuMiw0LjdDOCw0LjcsNi45LDUuMiw2LDUuOUM1LjMsNi41LDQuOCw3LjQsNC44LDguNGMwLDEsMC41LDEuOSwxLjIsMi41bDEwLDguOGwxMC04LjhjMC43LTAuNiwxLjItMS41LDEuMi0yLjVjMC0xLTAuNS0xLjktMS4yLTIuNWMtMS45LTEuNS00LjUtMS41LTYuNCwwYy0wLjcsMC42LTEuMiwxLjUtMS4yLDIuNWgtNC44YzAtMS0wLjUtMS45LTEuMi0yLjVDMTEuNSw1LjEsMTAuNCw0LjcsOS4yLDQuN3oiLz48L3N2Zz4=');
+        }
+
+        .publication-viewer.touch-disabled .crisp-theme .section.author-section .appreciate-button:hover {
+            color: rgba(17, 26, 11, 1);
+            border-color: rgba(17, 26, 11, 1);
+        }
+
+        .publication-viewer.touch-disabled .crisp-theme .section.author-section .appreciate-button:active {
+            color: rgba(17, 26, 11, 0.5);
+            border-color: rgba(17, 26, 11, 0.5);
+        }
+
+        .publication-viewer.touch-disabled .crisp-theme .section.author-section .appreciate-button:active:after {
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBzdHlsZT0iZmlsbDpyZ2JhKDE3LDI2LDExLDAuNSk7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDMpIiBkPSJNMi44LDE0LjRDMS4xLDEyLjksMCwxMC43LDAsOC40YzAtMi4zLDEtNC41LDIuOC02QzQuNiwwLjksNi45LDAsOS4yLDBjMi40LDAsNC42LDAuOCw2LjQsMi40YzAuMSwwLjEsMC4zLDAuMywwLjQsMC40YzAuMS0wLjEsMC4zLTAuMywwLjQtMC40QzE4LjIsMC45LDIwLjUsMCwyMi44LDBjMi4zLDAsNC42LDAuOCw2LjQsMi40QzMxLDMuOSwzMiw2LjEsMzIsOC40YzAsMi4zLTEsNC41LTIuOCw2TDE2LDI2Ii8+PC9zdmc+');
+        }
+
+        .publication-viewer.touch-disabled .crisp-theme .section.author-section .appreciate-button.appreciated:active:after {
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBzdHlsZT0iZmlsbDpyZ2JhKDE3LDI2LDExLDAuNSk7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDMpIiBkPSJNMTYsMjZMMi44LDE0LjRDMS4xLDEyLjksMCwxMC43LDAsOC40YzAtMi4zLDEtNC41LDIuOC02QzQuNiwwLjksNi45LDAsOS4yLDBjMi40LDAsNC42LDAuOCw2LjQsMi40YzAuMSwwLjEsMC4zLDAuMywwLjQsMC40YzAuMS0wLjEsMC4zLTAuMywwLjQtMC40QzE4LjIsMC45LDIwLjUsMCwyMi44LDBjMi4zLDAsNC42LDAuOCw2LjQsMi40QzMxLDMuOSwzMiw2LjEsMzIsOC40YzAsMi4zLTEsNC41LTIuOCw2TDE2LDI2eiBNOS4yLDQuN0M4LDQuNyw2LjksNS4yLDYsNS45QzUuMyw2LjUsNC44LDcuNCw0LjgsOC40YzAsMSwwLjUsMS45LDEuMiwyLjVsMTAsOC44bDEwLTguOGMwLjctMC42LDEuMi0xLjUsMS4yLTIuNWMwLTEtMC41LTEuOS0xLjItMi41Yy0xLjktMS41LTQuNS0xLjUtNi40LDBjLTAuNywwLjYtMS4yLDEuNS0xLjIsMi41aC00LjhjMC0xLTAuNS0xLjktMS4yLTIuNUMxMS41LDUuMSwxMC40LDQuNyw5LjIsNC43eiIvPjwvc3ZnPg==');
+        }
+
+
+        .crisp-theme .section.credits-section {
+            color: rgba(17, 26, 11, 1);
+        }
+
+        /* behaviors css */
+        /* Default content behaviors */
+
+        .crisp-theme div.image {
+            -webkit-transition: opacity .5s cubic-bezier(0.455, 0.030, 0.515, 0.955), -webkit-transform .5s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+            -moz-transition: opacity .5s cubic-bezier(0.455, 0.030, 0.515, 0.955), -moz-transform .5s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+            -o-transition: opacity .5s cubic-bezier(0.455, 0.030, 0.515, 0.955), -o-transform .5s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+            -ms-transition: opacity .5s cubic-bezier(0.455, 0.030, 0.515, 0.955), -ms-transform .5s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+            transition: opacity .5s cubic-bezier(0.455, 0.030, 0.515, 0.955), transform .5s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+
+            opacity: 1;
+
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            -o-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+
+        .crisp-theme div.image.hidden {
+            opacity: 0;
+
+            -webkit-transform: translate3d(0, 40px, 0);
+            -moz-transform: translate3d(0, 40px, 0);
+            -o-transform: translate3d(0, 40px, 0);
+            -ms-transform: translate3d(0, 40px, 0);
+            transform: translate3d(0, 40px, 0);
+        }
+
+        .crisp-theme .caption,
+        .crisp-theme .grid-caption {
+            -webkit-transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), -webkit-transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+            -moz-transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), -moz-transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+            -o-transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), -o-transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+            -ms-transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), -ms-transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+            transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+
+            opacity: 1;
+
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            -o-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+
+        .crisp-theme .caption.hidden,
+        .crisp-theme .grid-caption.hidden {
+            opacity: 0;
+
+            -webkit-transform: translate3d(20px, 0, 0);
+            -moz-transform: translate3d(20px, 0, 0);
+            -o-transform: translate3d(20px, 0, 0);
+            -ms-transform: translate3d(20px, 0, 0);
+            transform: translate3d(20px, 0, 0);
+        }
+
+        .crisp-theme blockquote {
+            -webkit-transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), -webkit-transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+            -moz-transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), -moz-transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+            -o-transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), -o-transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+            -ms-transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), -ms-transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+            transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+
+            opacity: 1;
+
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            -o-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+
+        .crisp-theme blockquote.hidden {
+            opacity: 0;
+
+            -webkit-transform: translate3d(20px, 0, 0);
+            -moz-transform: translate3d(20px, 0, 0);
+            -o-transform: translate3d(20px, 0, 0);
+            -ms-transform: translate3d(20px, 0, 0);
+            transform: translate3d(20px, 0, 0);
+        }
+
+
+        /* overrides to some alignments defined after component
+         styles to make sure they will override the component
+         defaults when they have the same specificity */
+
+        .crisp-theme .link-button-wrapper,
+        /* default */
+        .crisp-theme .link-button-wrapper.link-left {
+            text-align: left;
+        }
+
+        .crisp-theme .link-button-wrapper.link-center {
+            text-align: center;
+        }
+
+        .crisp-theme .link-button-wrapper.link-right {
+            text-align: right;
+        }
+
+        .crisp-theme p.text-left,
+        .crisp-theme h3.text-left,
+        .crisp-theme h4.text-left,
+        .crisp-theme .caption.text-left,
+        .crisp-theme .grid-caption.text-left {
+            text-align: left;
+        }
+
+        .crisp-theme .caption,
+        /* defaults */
+        .crisp-theme .grid-caption,
+
+        .crisp-theme p.text-center,
+        .crisp-theme h3.text-center,
+        .crisp-theme h4.text-center,
+        .crisp-theme .caption.text-center,
+        .crisp-theme .grid-caption.text-center {
+            text-align: center;
+        }
+
+        .crisp-theme p.text-right,
+        .crisp-theme h3.text-right,
+        .crisp-theme h4.text-right,
+        .crisp-theme .caption.text-right,
+        .crisp-theme .grid-caption.text-right {
+            text-align: right;
+        }
+
+        .crisp-theme .caption-right .pull-quote {
+            right: 3%;
+            left: auto;
+            margin-left: 0;
+            margin-right: 2rem;
+        }
+    </style>
+    <noscript id="noscript-static-layout" data-href="https://page.adobespark-assets.com/runtime/1.23/noscript.gz.css">
+        <link href="https://page.adobespark-assets.com/runtime/1.23/noscript.gz.css" type="text/css" rel="stylesheet">
+    </noscript>
+    <!--BEGIN-BUMPER-STYLE-SHEET-->
+    <!--END-BUMPER-STYLE-SHEET-->
+</head>
+
+<body class="">
+    <div id="app">
+        <div id="publication-viewer" class="publication-viewer">
+            <div id="luca-splash" class="splash">
+                <div class="background"
+                    style="background-image: url(images/cac36560-c2ab-4eee-a887-22d9beef08aa.jpg?asset_id=617218aa-106c-43af-8ae3-35d93e267ace&img_etag=%22d4e401ca39cb8ebed07c2695e0cf86fb%22&size=1024); background-position: 50.953320184089414% 50.24271844660194%;">
+                </div>
+                <div class="content">
+                    <div class="logo"></div>
+                    <div class="loading-label">Loading</div>
+                    <div class="wp-progress-bar">
+                        <div class="wp-progress-bar-clip">
+                            <div class="wp-progress-bar-view"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="publication-view">
+                <div class="wp-swipe-panel-group">
+                    <div class="wp-swipe-panel-group-view">
+                        <div class="wp-swipe-panel-group-panel article-panel">
+                            <div class="article crisp-theme sections-article-layout"
+                                data-article-type="sections-article">
+                                <div class="section title-section title-center" data-section-behavior="crisp-title"
+                                    data-layer="1" data-layer-name="over" data-scroll-after-animation="false">
+                                    <div class="section-view">
+                                        <div class="section-background ">
+                                            <div class="section-background-image"
+                                                style="background-position: 50.953320184089414% 50.24271844660194%;"><a
+                                                    class="background-image-placeholder-link"
+                                                    href="images/cac36560-c2ab-4eee-a887-22d9beef08aa.jpg?asset_id=617218aa-106c-43af-8ae3-35d93e267ace&img_etag=%22d4e401ca39cb8ebed07c2695e0cf86fb%22&size=1024"
+                                                    data-image-width="1551" data-image-height="872"></a></div>
+                                        </div>
+
+                                        <div class="title-header">
+                                            <h1 class="title-header-view">
+                                                <span class="gradient-overlay"></span>
+                                                <span class="title">Serenity</span>
+                                                <span class="subtitle">@ 14 Keurbooms River Lodge</span>
+                                            </h1>
+                                        </div>
+
+                                        <div class="navigation-hint down"></div>
+                                    </div>
+                                </div>
+                                <div class="section single-column-section  large-content-spacing-top"
+                                    data-section-behavior="crisp-single-column" data-layer="0" data-layer-name="over">
+                                    <div class="section-view">
+                                        <div class="section-content">
+                                            <div class="section-content-view">
+                                                <div class="content-container">
+                                                    <p class=" text-center">Serenity is a self-catering apartment
+                                                        situated on the banks of the Keurbooms River in the beloved
+                                                        Keurbooms River Lodge. The apartment can sleep 4 people
+                                                        comfortably and is equipped with everything that you need for
+                                                        your holiday stay. Just a 10 minute walk from the ocean and
+                                                        close to many restaurants and activities along the Garden Route.
+                                                    </p>
+                                                    <blockquote class=" ">Experience the Garden Route at its best
+                                                    </blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="section photo-grid-section" data-section-behavior="crisp-photo-grid"
+                                    data-layer-name="over">
+                                    <div class="section-view">
+                                        <div class="section-content">
+                                            <div class="section-content-view">
+                                                <div class="content-container">
+                                                    <div class="photo-grid">
+                                                        <div class="photo-group-container">
+                                                            <div class="photo-group t3-layout-lll-1">
+                                                                <div class="photo-container tile">
+                                                                    <a aria-label="Covered patio overlooking the beautiful gardens and Keurbooms river
+-Weber braai" class="photo-image" href="images/a649a7d8-adad-43e3-8f4c-85951aa4fee4.jpg?asset_id=19316557-fd2e-4aa3-9341-52150ef111b3&img_etag=%22a10739aabf07a89852af58238c1eb971%22&size=1024"
+                                                                        data-src="images/a649a7d8-adad-43e3-8f4c-85951aa4fee4.jpg?asset_id=19316557-fd2e-4aa3-9341-52150ef111b3&img_etag=%22a10739aabf07a89852af58238c1eb971%22&size=1024"
+                                                                        data-image-width="1024"
+                                                                        data-image-height="575"><span
+                                                                            class="background-image-placeholder-link"
+                                                                            data-href="images/a649a7d8-adad-43e3-8f4c-85951aa4fee4.jpg?asset_id=19316557-fd2e-4aa3-9341-52150ef111b3&img_etag=%22a10739aabf07a89852af58238c1eb971%22&size=512"
+                                                                            data-alt="Covered patio overlooking the beautiful gardens and Keurbooms river
+-Weber braai"></span></a>
+                                                                </div>
+                                                                <div class="photo-container tile">
+                                                                    <a aria-label="Open plan living area that walks out onto the covered patio"
+                                                                        class="photo-image"
+                                                                        href="images/581a9fc8-59b4-4110-8b98-97740210a2a8.jpg?asset_id=a2cb7638-fd30-4b77-9404-fc966c84b945&img_etag=%22808e9dc8efe63e9e1009f8c3f010a8d1%22&size=1024"
+                                                                        data-src="images/581a9fc8-59b4-4110-8b98-97740210a2a8.jpg?asset_id=a2cb7638-fd30-4b77-9404-fc966c84b945&img_etag=%22808e9dc8efe63e9e1009f8c3f010a8d1%22&size=1024"
+                                                                        data-image-width="1024"
+                                                                        data-image-height="575"><span
+                                                                            class="background-image-placeholder-link"
+                                                                            data-href="images/581a9fc8-59b4-4110-8b98-97740210a2a8.jpg?asset_id=a2cb7638-fd30-4b77-9404-fc966c84b945&img_etag=%22808e9dc8efe63e9e1009f8c3f010a8d1%22&size=512"
+                                                                            data-alt="Open plan living area that walks out onto the covered patio"></span></a>
+                                                                </div>
+                                                                <div class="photo-container tile">
+                                                                    <a aria-label="Open plan living area"
+                                                                        class="photo-image"
+                                                                        href="images/4117d122-8b9b-425a-85e3-b7b0f90ea9e7.jpg?asset_id=5a083743-77fd-4587-bc8c-3ddfb154c1ff&img_etag=%229149f38c17723034e1201b974e41f157%22&size=1024"
+                                                                        data-src="images/4117d122-8b9b-425a-85e3-b7b0f90ea9e7.jpg?asset_id=5a083743-77fd-4587-bc8c-3ddfb154c1ff&img_etag=%229149f38c17723034e1201b974e41f157%22&size=1024"
+                                                                        data-image-width="1024"
+                                                                        data-image-height="575"><span
+                                                                            class="background-image-placeholder-link"
+                                                                            data-href="images/4117d122-8b9b-425a-85e3-b7b0f90ea9e7.jpg?asset_id=5a083743-77fd-4587-bc8c-3ddfb154c1ff&img_etag=%229149f38c17723034e1201b974e41f157%22&size=512"
+                                                                            data-alt="Open plan living area"></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="photo-group-container">
+                                                            <div class="photo-group t3-layout-lll-1">
+                                                                <div class="photo-container tile">
+                                                                    <a aria-label="Open plan fully equipped kitchen with everything you need for your holiday"
+                                                                        class="photo-image"
+                                                                        href="images/f9e8f24d-1cdd-4a23-a983-fb6564134728.jpg?asset_id=808cd19c-f68a-42a3-9c44-890b29c26a46&img_etag=%221e57eb361b60128eb4a58181df75be34%22&size=1024"
+                                                                        data-src="images/f9e8f24d-1cdd-4a23-a983-fb6564134728.jpg?asset_id=808cd19c-f68a-42a3-9c44-890b29c26a46&img_etag=%221e57eb361b60128eb4a58181df75be34%22&size=1024"
+                                                                        data-image-width="1024"
+                                                                        data-image-height="576"><span
+                                                                            class="background-image-placeholder-link"
+                                                                            data-href="images/f9e8f24d-1cdd-4a23-a983-fb6564134728.jpg?asset_id=808cd19c-f68a-42a3-9c44-890b29c26a46&img_etag=%221e57eb361b60128eb4a58181df75be34%22&size=512"
+                                                                            data-alt="Open plan fully equipped kitchen with everything you need for your holiday"></span></a>
+                                                                </div>
+                                                                <div class="photo-container tile">
+                                                                    <a aria-label="Kitchen is equipped with
+- Microwave
+- Stove + oven
+- Fridge
+- Countertop dishwasher
+- LG washer/dryer" class="photo-image" href="images/951a3014-5a57-49a1-bb9f-c7c4ecc7227c.jpg?asset_id=31c10b9f-add7-49cd-a26d-9621a080a693&img_etag=%224fd9f0bd714eb1f5dd7deb8e3d92f4bc%22&size=1024"
+                                                                        data-src="images/951a3014-5a57-49a1-bb9f-c7c4ecc7227c.jpg?asset_id=31c10b9f-add7-49cd-a26d-9621a080a693&img_etag=%224fd9f0bd714eb1f5dd7deb8e3d92f4bc%22&size=1024"
+                                                                        data-image-width="1024"
+                                                                        data-image-height="575"><span
+                                                                            class="background-image-placeholder-link"
+                                                                            data-href="images/951a3014-5a57-49a1-bb9f-c7c4ecc7227c.jpg?asset_id=31c10b9f-add7-49cd-a26d-9621a080a693&img_etag=%224fd9f0bd714eb1f5dd7deb8e3d92f4bc%22&size=512"
+                                                                            data-alt="Kitchen is equipped with
+- Microwave
+- Stove + oven
+- Fridge
+- Countertop dishwasher
+- LG washer/dryer"></span></a>
+                                                                </div>
+                                                                <div class="photo-container tile">
+                                                                    <a aria-label="Bar area
+- Additional bar fridge
+- Ice maker" class="photo-image" href="images/dac89e4b-6432-4c3e-a98b-15c3ab7c16dd.jpg?asset_id=7d24bc85-858f-4434-93fb-622ed23f14df&img_etag=%2258f12d256cd278628b4278b5cbac42ba%22&size=1024"
+                                                                        data-src="images/dac89e4b-6432-4c3e-a98b-15c3ab7c16dd.jpg?asset_id=7d24bc85-858f-4434-93fb-622ed23f14df&img_etag=%2258f12d256cd278628b4278b5cbac42ba%22&size=1024"
+                                                                        data-image-width="1024"
+                                                                        data-image-height="575"><span
+                                                                            class="background-image-placeholder-link"
+                                                                            data-href="images/dac89e4b-6432-4c3e-a98b-15c3ab7c16dd.jpg?asset_id=7d24bc85-858f-4434-93fb-622ed23f14df&img_etag=%2258f12d256cd278628b4278b5cbac42ba%22&size=512"
+                                                                            data-alt="Bar area
+- Additional bar fridge
+- Ice maker"></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="photo-group-container">
+                                                            <div class="photo-group t3-layout-lll-1">
+                                                                <div class="photo-container tile">
+                                                                    <a aria-label="Smart Android TV + Fibre internet
+-NO DSTV available but guests can sign into their own DSTV / Netflix accounts for comfort" class="photo-image"
+                                                                        href="images/e8cf0f8b-fe27-4e11-8be8-0e08d83576d2.jpg?asset_id=585c4f17-0620-49ad-93ed-aa33e1f792a0&img_etag=%22f8715cfe00bc97dd544b79e297e2b485%22&size=1024"
+                                                                        data-src="images/e8cf0f8b-fe27-4e11-8be8-0e08d83576d2.jpg?asset_id=585c4f17-0620-49ad-93ed-aa33e1f792a0&img_etag=%22f8715cfe00bc97dd544b79e297e2b485%22&size=1024"
+                                                                        data-image-width="1024"
+                                                                        data-image-height="575"><span
+                                                                            class="background-image-placeholder-link"
+                                                                            data-href="images/e8cf0f8b-fe27-4e11-8be8-0e08d83576d2.jpg?asset_id=585c4f17-0620-49ad-93ed-aa33e1f792a0&img_etag=%22f8715cfe00bc97dd544b79e297e2b485%22&size=512"
+                                                                            data-alt="Smart Android TV + Fibre internet
+-NO DSTV available but guests can sign into their own DSTV / Netflix accounts for comfort"></span></a>
+                                                                </div>
+                                                                <div class="photo-container tile">
+                                                                    <a aria-label="Bedroom 1 - with 2 x Single XL Beds that can be converted to King XL"
+                                                                        class="photo-image"
+                                                                        href="images/ca09babf-243e-45ee-b0a0-1aa29b0ccf7e.jpg?asset_id=64daff72-0784-48f6-9e15-e0a2bf5653dc&img_etag=%2204f64e731963327d8a265fd0de1573d9%22&size=1024"
+                                                                        data-src="images/ca09babf-243e-45ee-b0a0-1aa29b0ccf7e.jpg?asset_id=64daff72-0784-48f6-9e15-e0a2bf5653dc&img_etag=%2204f64e731963327d8a265fd0de1573d9%22&size=1024"
+                                                                        data-image-width="1024"
+                                                                        data-image-height="575"><span
+                                                                            class="background-image-placeholder-link"
+                                                                            data-href="images/ca09babf-243e-45ee-b0a0-1aa29b0ccf7e.jpg?asset_id=64daff72-0784-48f6-9e15-e0a2bf5653dc&img_etag=%2204f64e731963327d8a265fd0de1573d9%22&size=512"
+                                                                            data-alt="Bedroom 1 - with 2 x Single XL Beds that can be converted to King XL"></span></a>
+                                                                </div>
+                                                                <div class="photo-container tile">
+                                                                    <a aria-label="Bathroom 1 - En-suite with shower"
+                                                                        class="photo-image"
+                                                                        href="images/76161e07-fa9e-43da-aa12-b419fa2574be.jpg?asset_id=814e6eee-3bf0-4903-a73b-4987bc3f2e61&img_etag=%228d2f2d6dbf04214df31bc66647166b6e%22&size=1024"
+                                                                        data-src="images/76161e07-fa9e-43da-aa12-b419fa2574be.jpg?asset_id=814e6eee-3bf0-4903-a73b-4987bc3f2e61&img_etag=%228d2f2d6dbf04214df31bc66647166b6e%22&size=1024"
+                                                                        data-image-width="1024"
+                                                                        data-image-height="575"><span
+                                                                            class="background-image-placeholder-link"
+                                                                            data-href="images/76161e07-fa9e-43da-aa12-b419fa2574be.jpg?asset_id=814e6eee-3bf0-4903-a73b-4987bc3f2e61&img_etag=%228d2f2d6dbf04214df31bc66647166b6e%22&size=512"
+                                                                            data-alt="Bathroom 1 - En-suite with shower"></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="photo-group-container">
+                                                            <div class="photo-group t3-layout-lll-1">
+                                                                <div class="photo-container tile">
+                                                                    <a aria-label="Bedroom 2 - with Queen XL bed and a view of the gardens"
+                                                                        class="photo-image"
+                                                                        href="images/f05811f3-dfd8-4d7b-9607-ec520d05ef33.jpg?asset_id=e6f84075-567f-423c-9371-18a636f885b4&img_etag=%22ec2d10ea115d03ce7d464aa76fba3f9b%22&size=1024"
+                                                                        data-src="images/f05811f3-dfd8-4d7b-9607-ec520d05ef33.jpg?asset_id=e6f84075-567f-423c-9371-18a636f885b4&img_etag=%22ec2d10ea115d03ce7d464aa76fba3f9b%22&size=1024"
+                                                                        data-image-width="1024"
+                                                                        data-image-height="575"><span
+                                                                            class="background-image-placeholder-link"
+                                                                            data-href="images/f05811f3-dfd8-4d7b-9607-ec520d05ef33.jpg?asset_id=e6f84075-567f-423c-9371-18a636f885b4&img_etag=%22ec2d10ea115d03ce7d464aa76fba3f9b%22&size=512"
+                                                                            data-alt="Bedroom 2 - with Queen XL bed and a view of the gardens"></span></a>
+                                                                </div>
+                                                                <div class="photo-container tile">
+                                                                    <a aria-label="Bedroom 2 - with Queen XL bed"
+                                                                        class="photo-image"
+                                                                        href="images/34d14cc5-3444-40f7-a3c6-8f71313bf4e5.jpg?asset_id=1b4edd00-93ac-4c7c-bb96-9db5277803e5&img_etag=%22f857d74ba48992b132b4a64507d0848d%22&size=1024"
+                                                                        data-src="images/34d14cc5-3444-40f7-a3c6-8f71313bf4e5.jpg?asset_id=1b4edd00-93ac-4c7c-bb96-9db5277803e5&img_etag=%22f857d74ba48992b132b4a64507d0848d%22&size=1024"
+                                                                        data-image-width="1024"
+                                                                        data-image-height="575"><span
+                                                                            class="background-image-placeholder-link"
+                                                                            data-href="images/34d14cc5-3444-40f7-a3c6-8f71313bf4e5.jpg?asset_id=1b4edd00-93ac-4c7c-bb96-9db5277803e5&img_etag=%22f857d74ba48992b132b4a64507d0848d%22&size=512"
+                                                                            data-alt="Bedroom 2 - with Queen XL bed"></span></a>
+                                                                </div>
+                                                                <div class="photo-container tile">
+                                                                    <a aria-label="Bathroom 2 - En-suite with shower"
+                                                                        class="photo-image"
+                                                                        href="images/e1389e27-53d7-4936-8ab7-99970386165f.jpg?asset_id=e2cd61fe-db83-4e73-92ff-208931e47c1f&img_etag=%224be4f91def9c8dbbfcdfa58ae37c1977%22&size=1024"
+                                                                        data-src="images/e1389e27-53d7-4936-8ab7-99970386165f.jpg?asset_id=e2cd61fe-db83-4e73-92ff-208931e47c1f&img_etag=%224be4f91def9c8dbbfcdfa58ae37c1977%22&size=1024"
+                                                                        data-image-width="1024"
+                                                                        data-image-height="575"><span
+                                                                            class="background-image-placeholder-link"
+                                                                            data-href="images/e1389e27-53d7-4936-8ab7-99970386165f.jpg?asset_id=e2cd61fe-db83-4e73-92ff-208931e47c1f&img_etag=%224be4f91def9c8dbbfcdfa58ae37c1977%22&size=512"
+                                                                            data-alt="Bathroom 2 - En-suite with shower"></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="photo-group-container">
+                                                            <div class="photo-group t2-layout-ll-1">
+                                                                <div class="photo-container tile">
+                                                                    <a aria-hidden="true" class="photo-image"
+                                                                        href="images/1433d319-2a62-4fb5-ae62-f397f0b1fb0e.jpg?asset_id=73abda63-eaa8-4916-b61b-a43ae03b9925&img_etag=%22f23450bc55d441bac6e5a3b5ecca3dfa%22&size=1024"
+                                                                        data-src="images/1433d319-2a62-4fb5-ae62-f397f0b1fb0e.jpg?asset_id=73abda63-eaa8-4916-b61b-a43ae03b9925&img_etag=%22f23450bc55d441bac6e5a3b5ecca3dfa%22&size=1024"
+                                                                        data-image-width="1024"
+                                                                        data-image-height="575"><span
+                                                                            class="background-image-placeholder-link"
+                                                                            data-href="images/1433d319-2a62-4fb5-ae62-f397f0b1fb0e.jpg?asset_id=73abda63-eaa8-4916-b61b-a43ae03b9925&img_etag=%22f23450bc55d441bac6e5a3b5ecca3dfa%22&size=512"></span></a>
+                                                                </div>
+                                                                <div class="photo-container tile">
+                                                                    <a aria-hidden="true" class="photo-image"
+                                                                        href="images/a80e8998-8fde-4de7-ac5d-b1da3d044991.jpg?asset_id=d21a9242-dc66-4d0a-b9c9-ba8708fd77d1&img_etag=%223fe80b63a028b225a01f640b4e56ac2d%22&size=1024"
+                                                                        data-src="images/a80e8998-8fde-4de7-ac5d-b1da3d044991.jpg?asset_id=d21a9242-dc66-4d0a-b9c9-ba8708fd77d1&img_etag=%223fe80b63a028b225a01f640b4e56ac2d%22&size=1024"
+                                                                        data-image-width="1024"
+                                                                        data-image-height="576"><span
+                                                                            class="background-image-placeholder-link"
+                                                                            data-href="images/a80e8998-8fde-4de7-ac5d-b1da3d044991.jpg?asset_id=d21a9242-dc66-4d0a-b9c9-ba8708fd77d1&img_etag=%223fe80b63a028b225a01f640b4e56ac2d%22&size=512"></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="photo-group-container">
+                                                            <div class="photo-group t2-layout-ll-1">
+                                                                <div class="photo-container tile">
+                                                                    <a aria-hidden="true" class="photo-image"
+                                                                        href="images/ffd6ef1c-64f9-4627-857a-188280b8e2b0.jpg?asset_id=98c809a7-1f17-47a0-93e9-48f1965e57d1&img_etag=%2278904ce42a4a43666ccec80cd9d0e9a5%22&size=1024"
+                                                                        data-src="images/ffd6ef1c-64f9-4627-857a-188280b8e2b0.jpg?asset_id=98c809a7-1f17-47a0-93e9-48f1965e57d1&img_etag=%2278904ce42a4a43666ccec80cd9d0e9a5%22&size=1024"
+                                                                        data-image-width="1024"
+                                                                        data-image-height="576"><span
+                                                                            class="background-image-placeholder-link"
+                                                                            data-href="images/ffd6ef1c-64f9-4627-857a-188280b8e2b0.jpg?asset_id=98c809a7-1f17-47a0-93e9-48f1965e57d1&img_etag=%2278904ce42a4a43666ccec80cd9d0e9a5%22&size=512"></span></a>
+                                                                </div>
+                                                                <div class="photo-container tile">
+                                                                    <a aria-hidden="true" class="photo-image"
+                                                                        href="images/a254afb3-b5f2-4075-88a8-0919d95f9b0d.jpg?asset_id=14b992df-f12f-4a13-8e57-5c6aaf0d3884&img_etag=%22af07fce1491e7b35b02586d5cb9e0ea7%22&size=1024"
+                                                                        data-src="images/a254afb3-b5f2-4075-88a8-0919d95f9b0d.jpg?asset_id=14b992df-f12f-4a13-8e57-5c6aaf0d3884&img_etag=%22af07fce1491e7b35b02586d5cb9e0ea7%22&size=1024"
+                                                                        data-image-width="1024"
+                                                                        data-image-height="575"><span
+                                                                            class="background-image-placeholder-link"
+                                                                            data-href="images/a254afb3-b5f2-4075-88a8-0919d95f9b0d.jpg?asset_id=14b992df-f12f-4a13-8e57-5c6aaf0d3884&img_etag=%22af07fce1491e7b35b02586d5cb9e0ea7%22&size=512"></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="section single-column-section  large-content-spacing-bottom"
+                                    data-section-behavior="crisp-single-column" data-layer="0" data-layer-name="over">
+                                    <div class="section-view">
+                                        <div class="section-content">
+                                            <div class="section-content-view">
+                                                <div class="content-container">
+                                                    <h4 class=" ">Kitchen</h4>
+                                                    <p class=" ">Fully equipped kitchen with everything you will need
+                                                        during your stay</p>
+                                                    <ul>
+                                                        <li class=" ">Microwave</li>
+                                                        <li class=" ">Stove and oven</li>
+                                                        <li class=" ">Fridge</li>
+                                                        <li class=" ">Countertop dishwasher</li>
+                                                        <li class=" ">LG washer &#x2F; dryer</li>
+                                                    </ul>
+                                                    <h4 class=" ">Living area and patio</h4>
+                                                    <p class=" ">Open plan living area that walks out onto the covered
+                                                        patio</p>
+                                                    <ul>
+                                                        <li class=" ">Smart Android TV</li>
+                                                        <li class=" ">Fibre WiFi</li>
+                                                        <li class=" ">Bar fridge</li>
+                                                        <li class=" ">Ice maker</li>
+                                                        <li class=" ">Weber braai</li>
+                                                    </ul>
+                                                    <p class=" "><i>Please note that for DSTV and other streaming
+                                                            services, you can sign in with your own accounts for
+                                                            comfort. We do not provide satellite DSTV.</i></p>
+                                                    <h4 class=" ">Bedrooms</h4>
+                                                    <p class=" "><b>Bedroom 1 </b>- with 2 x Single XL Beds that can be
+                                                        converted to King XL and en-suite bathroom with shower</p>
+                                                    <p class=" "><b>Bedroom 2</b> - with Queen XL bed and en-suite
+                                                        bathroom with shower</p>
+                                                    <h4 class=" ">Lodge amenities</h4>
+                                                    <ul>
+                                                        <li class=" ">Swimming pool</li>
+                                                        <li class=" ">Tennis court</li>
+                                                        <li class=" ">Kiddies play area</li>
+                                                        <li class=" ">Situated on the Keurbooms river</li>
+                                                        <li class=" ">10 minute walk to ocean</li>
+                                                    </ul>
+                                                    <figure class="image" role="group"
+                                                        aria-label="The Keurbooms River Lodge with rolling green lawns just a stone throw away from the ocean">
+                                                        <div class="image-wrapper">
+                                                            <a href="images/38690ab4-4e9e-492a-b5cd-20cc19b2332f.jpg?asset_id=668fadcf-0383-4616-a4fc-72a5107cb5fb&amp;img_etag=%22cfde65daee6e98ae3c4fa635ca72553b%22&amp;size=1024"
+                                                                aria-hidden="true" class="image-viewer-link"
+                                                                target="_blank" rel="nofollow noreferrer"><span
+                                                                    class="image-placeholder-link"
+                                                                    data-href="images/38690ab4-4e9e-492a-b5cd-20cc19b2332f.jpg?asset_id=668fadcf-0383-4616-a4fc-72a5107cb5fb&amp;img_etag=%22cfde65daee6e98ae3c4fa635ca72553b%22&amp;size=1024"
+                                                                    style="width: 1652px; padding-top: 56.23486682808717%"
+                                                                    data-image-width="1652"
+                                                                    data-image-height="929"></span></a>
+                                                        </div>
+                                                        <figcaption class="caption ">The Keurbooms River Lodge with
+                                                            rolling green lawns just a stone throw away from the ocean
+                                                        </figcaption>
+                                                    </figure>
+                                                    <h3 class=" ">2023 Rates</h3>
+                                                    <h4 class=" ">Peak season (December and April school holidays)</h4>
+                                                    <p class=" "><i>R2300 per night</i> and a minimum stay of<i> 14
+                                                            nights</i></p>
+                                                    <ul>
+                                                        <li class=" ">December 2022 - 17 January 2023</li>
+                                                        <li class=" ">25 March 2023 - 11 April 2023</li>
+                                                        <li class=" ">December 2023 - January 2024</li>
+                                                    </ul>
+                                                    <h4 class=" ">Mid season (June and September school holidays)</h4>
+                                                    <p class=" "><i>R1500 per night</i> and a minimum stay of <i>7
+                                                            nights</i></p>
+                                                    <ul>
+                                                        <li class=" ">24 June 2023 - 17 July 2023</li>
+                                                        <li class=" ">30 September 2023 - 9 October</li>
+                                                    </ul>
+                                                    <h4 class=" ">Low season (Any other dates not specified above)</h4>
+                                                    <p class=" "><i>R1000 per nigh</i>t and a minimum stay of <i>7
+                                                            nights</i></p>
+                                                    <figure class="image" role="group"
+                                                        aria-label="A view of the sunset over the Keurbooms River right from your doorstep">
+                                                        <div class="image-wrapper">
+                                                            <a href="images/5c43d7bb-e9b9-49d1-8957-30844e46558d.jpg?asset_id=65fcd7c7-0e6a-4968-898f-48fb71f4d0f2&amp;img_etag=%223290669448706c5f11b3956f7e091e11%22&amp;size=1024"
+                                                                aria-hidden="true" class="image-viewer-link"
+                                                                target="_blank" rel="nofollow noreferrer"><span
+                                                                    class="image-placeholder-link"
+                                                                    data-href="images/5c43d7bb-e9b9-49d1-8957-30844e46558d.jpg?asset_id=65fcd7c7-0e6a-4968-898f-48fb71f4d0f2&amp;img_etag=%223290669448706c5f11b3956f7e091e11%22&amp;size=1024"
+                                                                    style="width: 2560px; padding-top: 56.25%"
+                                                                    data-image-width="2560"
+                                                                    data-image-height="1440"></span></a>
+                                                        </div>
+                                                        <figcaption class="caption ">A view of the sunset over the
+                                                            Keurbooms River right from your doorstep</figcaption>
+                                                    </figure>
+                                                    <p class=" text-center">Email <b>serenity@keurboomsrl.co.za</b> or
+                                                        WhatsApp <b>+27 61 515 3750</b> to enquire today!</p>
+                                                    <div class="link-button-wrapper link-center">
+                                                        <a class="link-button "
+                                                            href="https://www.facebook.com/profile.php?id=100088263451742"
+                                                            rel="nofollow noreferrer">Facebook</a>
+                                                    </div>
+                                                    <div class="image">
+                                                        <div class="image-wrapper">
+                                                            <a href="images/3e665851-c73f-4f7a-be91-c8edb70105f2.png?asset_id=cc3d2579-410f-438a-b85b-48586be131df&amp;img_etag=%226d350004c5fc4ab92a694ecfffc394dc%22&amp;size=1024"
+                                                                aria-hidden="true" class="image-viewer-link"
+                                                                target="_blank" rel="nofollow noreferrer"><span
+                                                                    class="image-placeholder-link"
+                                                                    data-href="images/3e665851-c73f-4f7a-be91-c8edb70105f2.png?asset_id=cc3d2579-410f-438a-b85b-48586be131df&amp;img_etag=%226d350004c5fc4ab92a694ecfffc394dc%22&amp;size=1024"
+                                                                    style="width: 2560px; padding-top: 72.8515625%"
+                                                                    data-image-width="2560"
+                                                                    data-image-height="1865"></span></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="section author-section" data-section-behavior="crisp-author"
+                                    data-layer-name="over">
+                                    <div class="section-view">
+                                        <div class="section-content">
+                                            <div class="section-content-view">
+                                                <div class="content-container">
+                                                    <div class="author-appreciation-container">
+                                                        <a href="https://express.adobe.com/page/U5mjiYNFg06bX"
+                                                            class="button appreciate-button">Appreciate</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--BUMPER-SECTION-TOP-LEVEL-START-->
+                                <div class="section bumper-section default-bumper-section" data-layer-name="over">
+                                    <div class="section-view">
+                                        <!--FOOTER-START-->
+                                        <nav class="footer" aria-label="Adobe links">
+                                            <a class="tos" target="_blank" href="http://www.adobe.com/legal/terms.html"
+                                                rel="nofollow">Terms of Service</a>
+                                            <a class="privacy" target="_blank" href="http://www.adobe.com/go/privacy"
+                                                rel="nofollow">Privacy Policy</a>
+                                            <a class="js-report-abuse" href="#" target="_blank" rel="nofollow">Report
+                                                Abuse</a>
+                                        </nav>
+                                        <!--FOOTER-END-->
+                                    </div>
+                                </div>
+                                <!--BUMPER-SECTION-TOP-LEVEL-END-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="publication-viewer-next-link"></a> <a href="#"
+                class="publication-viewer-previous-link"></a>
+        </div>
+    </div>
+    <!-- javascripts go here -->
+    <script type="text/javascript">
+        window.useNewBumper = true;
+        window.brandType = 'default';
+    </script>
+
+    <script type="text/javascript" src="https://page.adobespark-assets.com/runtime/1.23/runtime-prod.gz.js"
+        charset="utf-8"></script>
+    <!--BEGIN-BUMPER-BEHAVIORS-->
+    <!--END-BUMPER-BEHAVIORS-->
+</body>
+
+</html>

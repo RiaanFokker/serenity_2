@@ -1,0 +1,11 @@
+body {
+    margin: 0 0 0 var(--nav-width);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+}
+  
+  /* Main content */
+  #app {
+    line-height: 1.5;
+    font-weight: 500;
+  }
